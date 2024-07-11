@@ -3,8 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.1"
 
+# run:
+#   bundle install
+#   bin/rails javascript:install:esbuild
+gem 'jsbundling-rails'
+
 =begin
 adding import map to take advantage of assest pipeline and import maps to refactor toggling code using ES6 style
+Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 
 run: 
   bundle install
@@ -23,9 +29,6 @@ gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma"
-
-# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
