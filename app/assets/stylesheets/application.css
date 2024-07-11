@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ /* referencing the hidden class */
+ .hidden {
+   display: none;
+ }
